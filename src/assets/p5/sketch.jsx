@@ -17,12 +17,22 @@ class Sketch extends React.Component {
     let numBoids = this.boids;
     let bg = "#00000000";
     p.windowResized = () => {
-      p.resizeCanvas(p.windowWidth, body.clientHeight);
+      let isPhone = window.innerWidth < 600 ? true : false;
+      if (isPhone) p.resizeCanvas(p.windowWidth, p.windowHeight);
+      else p.resizeCanvas(p.windowWidth, body.clientHeight);
     };
 
     p.setup = () => {
       p.parent = body;
-      var canvas = p.createCanvas(p.windowWidth, body.clientHeight);
+      let isPhone = window.innerWidth < 600 ? true : false;
+      if (isPhone) var canvas = p.createCanvas(p.windowWidth, p.windowHeight);
+      else {
+        var canvas = p.createCanvas(
+          p.windowWidth,
+          isPhone ? p.windowHeight : body.clientHeight
+        );
+      }
+
       canvas.position(0, 0);
       canvas.style("z-index", "-1");
       p.background(bg);
