@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&family=Raleway:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&family=Raleway:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&family=Raleway:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&family=Raleway:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&family=Raleway:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+nav {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding: 2rem 2rem;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .socials img {
+  width: 25px;
+  height: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .socials :hover {
+  color: #eac6ff;
+  width: 30px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+nav .logo {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav .links .link {
+  color: white;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+nav .links .link.active {
+  color: #eac6ff;
+  font-style: italic;
+}
+
+nav .links .link:hover {
+  color: #c1f5ff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media screen and (min-width: 750px) {
+  nav .socials {
+    margin-right: 5rem;
+  }
+  nav .logo {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  nav .links .link {
+    font-size: 14px;
+  }
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+}
+
+.item .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.item .content .itemTitle {
+  font-family: "Questrial", sans-serif;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-bottom: 1rem;
+}
+
+.item .content .itemTitle span {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.item .content .itemTitle span .medium1 {
+  color: #eac6ff;
+}
+
+.item .content .itemTitle span .medium2 {
+  color: #c1f5ff;
+}
+
+.item .content .itemDescription {
+  color: #fff;
+  text-align: left;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 14px;
+  text-align: left;
+  padding: 0 1rem;
+  max-width: 360px;
+}
+
+.item .imageDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.item .imageDiv .itemImage {
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 5rem;
+}
+
+.item .imageDiv .itemButton {
+  color: white;
+  font-size: 16px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+
+.item .imageDiv .itemButton:hover {
+  opacity: 0.6;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+@media screen and (min-width: 750px) {
+  .item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .item .content {
+    margin-right: 2rem;
+    width: auto;
+    margin-bottom: 0rem;
+  }
+  .item .imageDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .item .imageDiv .itemImage {
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .item .imageDiv .itemButton {
+    font-size: 16px;
+    padding: 1rem;
+    margin-bottom: 0rem;
+  }
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .headerWrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .headerWrapper .headerText {
+  width: 80vmin;
+  min-width: 300px;
+  font-family: "Questrial", sans-serif;
+  color: #ffffff;
+  font-size: 4.5vmin;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 6vmin;
+  text-align: center;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.resumeButton {
+  color: white;
+  font-size: 3vmin;
+  border: 2px solid white;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+
+.resumeButton:hover {
+  opacity: 0.6;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.aboutButton {
+  color: white;
+  font-size: 16px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: underline;
+  margin-bottom: 4rem;
+}
+
+.arrow {
+  height: auto;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 2rem;
+}
+
+.arrow .arrowText {
+  font-size: 2.2vmin;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.arrow .arrowIcon {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 32px;
+}
+
+.projects {
+  position: relative;
+  width: 100%;
+  height: 100% auto;
+  min-height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about {
+  height: 100vh;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.about .aboutImage {
+  position: absolute;
+  width: 30vmin;
+  height: auto;
+  bottom: 0;
+  right: 0;
+}
+
+.about .aboutTitle {
+  font-family: "Questrial", sans-serif;
+  color: white;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+  overflow: hidden;
+  font-size: 5vmin;
+}
+
+.about .aboutText {
+  color: white;
+  width: 80vmin;
+  font-size: 2.5vmin;
+  font-weight: 400;
+  line-height: 3vmin;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+  letter-spacing: 1px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.reactCredit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reactCredit .creditText {
+  color: white;
+  font-size: 2vmin;
+  font-style: italic;
+}
+
+.reactCredit .creditLogo {
+  margin-left: 0.5rem;
+  width: 4vmin;
+}
+
+@media screen and (min-width: 750px) {
+  .about .aboutText {
+    font-size: 3vmin;
+    line-height: 3.5vmin;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  width: 100vw auto;
+  height: auto;
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-gradient(linear, left top, left bottom, from(#360033), to(#0b8793));
+  background: linear-gradient(to bottom, #360033, #0b8793);
+  background: -webkit-gradient(linear, right top, left top, from(#5c258d), to(#4389a2));
+  background: linear-gradient(to left, #5c258d, #4389a2);
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+}
+
+.highlight1 {
+  color: #eac6ff;
+}
+
+.highlight2 {
+  color: #c1f5ff;
+}
+
+.overlay {
+  background: transparent;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.sketch {
+  height: 0;
+}
+/*# sourceMappingURL=App.css.map */

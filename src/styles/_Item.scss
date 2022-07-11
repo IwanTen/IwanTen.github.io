@@ -1,0 +1,105 @@
+@import "Vars";
+
+.item {
+  // border: 2px dotted white;
+
+  // position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+  .content {
+    // border: 2px dotted blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    .itemTitle {
+      font-family: $headerFont;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 5px;
+      margin-bottom: 1rem;
+
+      span {
+        font-family: $mainFont;
+        font-size: 14px;
+        font-style: italic;
+        .medium1 {
+          color: $highlight1;
+        }
+        .medium2 {
+          color: $highlight2;
+        }
+      }
+    }
+    .itemDescription {
+      color: #fff;
+      text-align: left;
+      font-weight: 400;
+      line-height: 24px;
+      font-size: 14px;
+      text-align: left;
+      padding: 0 1rem;
+      max-width: 360px;
+    }
+  }
+  .imageDiv {
+    display: flex;
+    flex-direction: column;
+    .itemImage {
+      max-width: 400px;
+      height: auto;
+      margin-bottom: 5rem;
+    }
+    .itemButton {
+      color: white;
+      font-size: 16px;
+      align-self: center;
+      text-decoration: none;
+      border: 2px solid white;
+      padding: 1rem;
+      margin-bottom: 5rem;
+      &:hover {
+        opacity: 0.6;
+        transition: 0.2s ease-out;
+        transform: scale(0.95);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .item {
+    flex-direction: row;
+    .content {
+      // border: 2px dotted blue;
+      margin-right: 2rem;
+      width: auto;
+      margin-bottom: 0rem;
+    }
+    .imageDiv {
+      display: flex;
+      flex-direction: column;
+      .itemImage {
+        max-width: 400px;
+        height: auto;
+        margin-bottom: 2rem;
+      }
+      .itemButton {
+        font-size: 16px;
+        padding: 1rem;
+        margin-bottom: 0rem;
+      }
+    }
+  }
+}

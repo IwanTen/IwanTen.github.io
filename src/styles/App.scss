@@ -1,0 +1,43 @@
+@import "Vars";
+@import "Nav";
+@import "Item";
+@import "Home";
+@import "About";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  width: 100vw auto;
+  height: auto;
+  background: #000000; /* fallback for old browsers */
+  // background: linear-gradient(to bottom, #202020, #000000); /* linear gradient*/
+  background: linear-gradient(to bottom, #360033, #0b8793);
+  background: linear-gradient(to left, #5c258d, #4389a2);
+
+  font-family: $mainFont;
+  font-weight: normal;
+}
+
+.highlight1 {
+  color: $highlight1;
+}
+.highlight2 {
+  color: $highlight2;
+}
+
+.overlay {
+  background: transparent;
+  background: rgba(0, 0, 0, 0.6);
+  // backdrop-filter: blur(3px);
+}
+
+.sketch {
+  height: 0;
+}

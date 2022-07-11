@@ -1,0 +1,68 @@
+@import "Vars";
+
+nav {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding: 2rem 2rem;
+  z-index: 9999;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .socials {
+    img {
+      width: 25px;
+      height: auto;
+      transition: 0.5s;
+    }
+    :hover {
+      color: $highlight1;
+      width: 30px;
+      transition: 0.7s;
+    }
+  }
+
+  .logo {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    .link {
+      color: white;
+      margin-bottom: 8px;
+      font-size: 12px;
+      font-weight: 500;
+      &.active {
+        color: $highlight1;
+        font-style: italic;
+      }
+      &:hover {
+        color: $highlight2;
+        transition: 0.2s;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  nav {
+    .socials {
+      margin-right: 5rem;
+    }
+    .logo {
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .links {
+      .link {
+        font-size: 14px;
+      }
+    }
+  }
+}

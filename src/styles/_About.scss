@@ -1,0 +1,63 @@
+@import "Vars";
+
+.about {
+  height: 100vh;
+  padding-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  .aboutImage {
+    position: absolute;
+    width: 30vmin;
+    height: auto;
+    bottom: 0;
+    right: 0;
+  }
+
+  .aboutTitle {
+    font-family: $headerFont;
+    color: white;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+    overflow: hidden;
+    font-size: 5vmin;
+  }
+
+  .aboutText {
+    color: white;
+    width: 80vmin;
+    font-size: 2.5vmin;
+    font-weight: 400;
+    line-height: 3vmin;
+    justify-self: center;
+    text-align: center;
+    letter-spacing: 1px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+}
+.reactCredit {
+  display: flex;
+  align-items: center;
+  .creditText {
+    color: white;
+    font-size: 2vmin;
+    font-style: italic;
+  }
+  .creditLogo {
+    margin-left: 0.5rem;
+    width: 4vmin;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .about {
+    .aboutText {
+      font-size: 3vmin;
+      line-height: 3.5vmin;
+    }
+  }
+}
